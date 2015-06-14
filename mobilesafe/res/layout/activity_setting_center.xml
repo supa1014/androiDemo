@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.mobilesafe54"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+    <!-- 自定义组合控件 -->
+
+    <com.example.mobilesafe54.view.SettingView
+        android:id="@+id/sv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:desc="自动更新已经开启#自动更新已经关闭"
+        itheima:title="自动更新设置" >
+    </com.example.mobilesafe54.view.SettingView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_devider" />
+
+    <com.example.mobilesafe54.view.SettingView
+        android:id="@+id/sv_blacknumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:desc="黑名单更新已经开启#黑名单更新已经关闭"
+        itheima:title="黑名单设置" >
+    </com.example.mobilesafe54.view.SettingView>
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_devider" />
+
+    <com.example.mobilesafe54.view.SettingView
+        android:id="@+id/sv_watchdog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:desc="看门狗已经开启#看门狗已经关闭"
+        itheima:title="看门狗设置" >
+    </com.example.mobilesafe54.view.SettingView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_devider" />
+
+    <com.example.mobilesafe54.view.SettingView
+        android:id="@+id/sv_address_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:desc="归属地已经开启#归属地已经关闭"
+        itheima:title="号码归属地设置" >
+    </com.example.mobilesafe54.view.SettingView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/list_devider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:onClick="changeBgStyle"
+        android:background="@drawable/bg_selector">
+
+        <TextView
+            android:id="@+id/tv_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="归属地的提示风格"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_style_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_style"
+            android:text="苹果绿" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/jiantou_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

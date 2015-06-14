@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="主界面"
+        android:textSize="24sp" />
+
+    <!-- GridView  网格控件 
+    
+    android:verticalSpacing="10dp" 表示上下的间距
+    
+    android:numColumns="3" 表示当前一共有几列
+    -->
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="10dp"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

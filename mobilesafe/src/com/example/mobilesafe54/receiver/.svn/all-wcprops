@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/haha/!svn/ver/239/mobilesafe54/src/com/example/mobilesafe54/receiver
+END
+KillProcessReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/haha/!svn/ver/239/mobilesafe54/src/com/example/mobilesafe54/receiver/KillProcessReceiver.java
+END
+MyAppWidgetProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/haha/!svn/ver/238/mobilesafe54/src/com/example/mobilesafe54/receiver/MyAppWidgetProvider.java
+END
+BootCompletedReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/haha/!svn/ver/203/mobilesafe54/src/com/example/mobilesafe54/receiver/BootCompletedReceiver.java
+END
+SmsReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/haha/!svn/ver/205/mobilesafe54/src/com/example/mobilesafe54/receiver/SmsReceiver.java
+END
+MyDeviceAdminSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/haha/!svn/ver/204/mobilesafe54/src/com/example/mobilesafe54/receiver/MyDeviceAdminSample.java
+END

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilesafe54"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- android:installLocation 表示安装的位置 -->
+    <!--
+     versionName 给用户升级看的
+      versionCode 给开发人员用的
+    -->
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.example.mobilesafe54" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+        <!-- 欢迎界面 android:screenOrientation="portrait" 设置屏幕的方向 -->
+        <activity
+            android:name="com.example.mobilesafe54.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主界面 -->
+        <activity
+            android:name="com.example.mobilesafe54.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="aaa.bbb.ccc" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 手机防盗 -->
+        <activity
+            android:name="com.example.mobilesafe54.FindLostActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机防盗1 -->
+        <activity
+            android:name="com.example.mobilesafe54.Setup1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机防盗2 -->
+        <activity
+            android:name="com.example.mobilesafe54.Setup2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机防盗3 -->
+        <activity
+            android:name="com.example.mobilesafe54.Setup3Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机防盗4 -->
+        <activity
+            android:name="com.example.mobilesafe54.Setup4Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择联系人 -->
+        <activity
+            android:name="com.example.mobilesafe54.SelectContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 输入密码的界面 -->
+        <activity
+            android:name="com.example.mobilesafe54.EnterPwdActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 设置中心 -->
+        <activity
+            android:name="com.example.mobilesafe54.SettingCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 通讯卫士 -->
+        <activity
+            android:name="com.example.mobilesafe54.CallSafeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 进程管理的设置界面 -->
+        <activity
+            android:name="com.example.mobilesafe54.TaskSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 高级工具 -->
+        <activity
+            android:name="com.example.mobilesafe54.AtoolsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 缓存清理 -->
+        <activity
+            android:name="com.example.mobilesafe54.CleanCacheActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 病毒查杀 -->
+        <activity
+            android:name="com.example.mobilesafe54.AntivirusActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 号码归属地查询 -->
+        <activity
+            android:name="com.example.mobilesafe54.QueryNumberAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 应用程序管理 -->
+        <activity
+            android:name="com.example.mobilesafe54.AppManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 程序锁 -->
+        <activity
+            android:name="com.example.mobilesafe54.AppLockActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 进程管理 -->
+        <activity
+            android:name="com.example.mobilesafe54.TaskManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 获取地理位置服务 -->
+        <service android:name="com.example.mobilesafe54.service.LocationService" >
+        </service>
+
+        <!-- 黑名单的服务 -->
+        <service android:name="com.example.mobilesafe54.service.CallSafeService" >
+        </service>
+
+        <!-- 号码归属地的服务 -->
+        <service android:name="com.example.mobilesafe54.service.AddressLocationService" >
+        </service>
+
+        <!-- 看门狗的服务 -->
+        <service android:name="com.example.mobilesafe54.service.WatchDogService" >
+        </service>
+
+        <!-- 进程清理服务 -->
+        <service android:name="com.example.mobilesafe54.service.KillProcessServices" >
+        </service>
+        <!-- 桌面小控件服务 -->
+        <service android:name="com.example.mobilesafe54.service.AppWidgetProviderServices" >
+        </service>
+
+        <!--
+   android:priority="2147483647" 这个优先级会比1000的优先级更高
+   android.intent.action.BOOT_COMPLETED 手机开机监听的广播
+        -->
+        <receiver android:name="com.example.mobilesafe54.receiver.BootCompletedReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!-- 短信的广播 -->
+
+        <receiver android:name="com.example.mobilesafe54.receiver.SmsReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <!-- 设备管理员 -->
+
+        <receiver
+            android:name="com.example.mobilesafe54.receiver.MyDeviceAdminSample"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+
+            <!-- meta-data 元数据 -->
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <!-- 桌面小控件 -->
+
+        <receiver android:name="com.example.mobilesafe54.receiver.MyAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info" />
+        </receiver>
+        <receiver android:name="com.example.mobilesafe54.receiver.KillProcessReceiver" >
+            <intent-filter>
+                <action android:name="com.itheima" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+<!--         有米广告 -->
+        
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

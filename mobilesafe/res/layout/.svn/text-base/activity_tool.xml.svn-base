@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:focusable="true"
+        android:onClick="smsBackup"
+        android:text="短信备份"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:focusable="true"
+        android:onClick="queryAddress"
+        android:text="号码归属地查询"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:focusable="true"
+        android:onClick="appLock"
+        android:text="程序锁"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:focusable="true"
+        android:onClick="btn_show_offerswall"
+        android:text="积分墙"
+        android:textSize="24sp" />
+
+</LinearLayout>
